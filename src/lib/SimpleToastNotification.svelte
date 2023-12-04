@@ -1,10 +1,12 @@
 <script lang="ts">
-    import ToastNotification from "$lib/ToastNotification.svelte";
-    export let toastManager;
+    import { ToastNotification } from '$lib';
+
+		export let toastManager;
     export let containerClass = "fixed top-0 right-0 z-50 flex flex-col items-end justify-end p-4 gap-2";
 </script>
 
-<ToastNotification class="w-96 flex justify-between p-2 bg-white border font-semibold rounded shadow" {containerClass} {toastManager}>
+<ToastNotification class='w-96 flex justify-between p-2 bg-white border font-semibold rounded shadow' {containerClass}
+									 {toastManager}>
     <div slot="toast" let:message let:type class="flex gap-2">
         <div class="flex justify-center items-center">
         {#if type === "info"}

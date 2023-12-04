@@ -1,6 +1,6 @@
 // Reexport your entry components here
-export { default as SimpleToastNotification } from 'SimpleToastNotification.svelte';
-export { default as ToastNotification } from './ToastNotification.svelte.svelte';
+export { default as SimpleToastNotification } from '$lib/SimpleToastNotification.svelte';
+export { default as ToastNotification } from '$lib/ToastNotification.svelte';
 import { writable } from 'svelte/store';
 
 export type Toast = {
