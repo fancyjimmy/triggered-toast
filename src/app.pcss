@@ -1,0 +1,16 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .cool-button{
+        @apply bg-blue-500 rounded-lg cursor-pointer select-none
+        active:translate-y-2  active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841]
+        active:border-b-[0px]
+        disabled:opacity-50
+        transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]
+        border-b-[1px] border-blue-400;
+    }
+}
