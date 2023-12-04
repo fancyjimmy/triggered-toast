@@ -1,6 +1,6 @@
 <script lang="ts">
     import SimpleToastNotification from "$lib/SimpleToastNotification.svelte";
-    import {toasts} from "$lib/store";
+    import {toasts} from "$lib";
 </script>
 
 <SimpleToastNotification />

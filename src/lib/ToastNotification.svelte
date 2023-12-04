@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { toasts } from '$lib/store';
+    import { toasts } from '$lib';
     export let toastManager = toasts;
 </script>
 
